@@ -1,0 +1,62 @@
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  /* background-image: url("https://images.unsplash.com/photo-1602432799369-10a0b4d6dda9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=697&q=80"); */
+  background-size: cover;
+  background-position: center;
+  font-family: sans-serif;
+}
+
+/* .contact-title {
+  margin-top: 100px;
+  color: white;
+  text-transform: uppercase;
+  transition:  all 2.5s ease-in-out;
+}
+
+.contact-title h1{
+  font-size: 32px;
+  line-height: 10px;
+}
+
+.contact-title h2{
+  font-size: 16px;
+}
+
+form{
+  margin-top: 50px;
+  transition: all 2.5s ease-in-out;
+}
+
+.form-control {
+  width: 600px;
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid white;
+  color: white;
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+input {
+  height: 45px;
+}
+
+form .submit {
+  background: green;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  height: 50px;
+  margin-top: 20px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+form .submit:hover{
+  background-color: darkgreen;
+} */
