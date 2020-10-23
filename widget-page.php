@@ -18,7 +18,8 @@
     $num2 = $_POST['num2'];
     $op = $_POST['op'];
 
-    // $calc_answer = '';
+    $calc_answer = '';
+    $final_calc_answer = (strlen($calc_answer) > 0 ? $calc_answer : '');
 
     if($op == '+'){
       $calc_answer = $num1 + $num2;
@@ -29,7 +30,7 @@
     } elseif($op == '*'){
       $calc_answer = $num1 * $num2;
     } else {
-      $calc_answer = 'Invalid Operator';
+      $calc_answer = '';
     }
   
 ?>
@@ -45,7 +46,7 @@
     </form>
   </div>
   <div class="calculator-widget">
-  <form action="widget-page.php" method="post">
+  <form action="widget-page.php" method="post" action="widget-page.php">
     First Num: <input type="number" step='0.1' name="num1"> <br>
     Operator: <select name='op'>
       <option value='+'>+</option>  
@@ -54,9 +55,9 @@
       <option value='/'>/</option>  
     <br>
     Second Num: <input type="number" step='0.1' name="num2"> <br>
-    <input type='submit'>
+    <input type='submit' value='Submit'>
   </form>
-  <h2><?php $calc_answer ?></h2>
+  <h2>Answer: <?php echo $calc_answer ?></h2>
   </div>
 
 
