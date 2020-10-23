@@ -14,6 +14,23 @@
   // if(isset($_POST['clear'])) {
   //   $welcome_message = 'Welcome!';
   // }
+    $num1 = $_POST["num1"];
+    $num2 = $_POST['num2'];
+    $op = $_POST['op'];
+
+    // $calc_answer = '';
+
+    if($op == '+'){
+      $calc_answer = $num1 + $num2;
+    } elseif($op == '-'){
+      $calc_answer = $num1 - $num2;
+    } elseif($op == '/'){
+      $calc_answer = $num1 / $num2;
+    } elseif($op == '*'){
+      $calc_answer = $num1 * $num2;
+    } else {
+      $calc_answer = 'Invalid Operator';
+    }
   
 ?>
   <div class="contact-title">
@@ -26,6 +43,20 @@
       <input type='submit' class='form-control submit' value="Submit">
       <!-- <input type='submit' class='form-control submit' name="clear" value="clear"> -->
     </form>
+  </div>
+  <div class="calculator-widget">
+  <form action="widget-page.php" method="post">
+    First Num: <input type="number" step='0.1' name="num1"> <br>
+    Operator: <select name='op'>
+      <option value='+'>+</option>  
+      <option value='-'>-</option>  
+      <option value='*'>*</option>  
+      <option value='/'>/</option>  
+    <br>
+    Second Num: <input type="number" step='0.1' name="num2"> <br>
+    <input type='submit'>
+  </form>
+  <h2><?php $calc_answer ?></h2>
   </div>
 
 
