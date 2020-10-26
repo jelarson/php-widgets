@@ -7,56 +7,16 @@ body {
   background-position: center;
   font-family: sans-serif;
 }
-
-/* .contact-title {
-  margin-top: 100px;
-  color: white;
-  text-transform: uppercase;
-  transition:  all 2.5s ease-in-out;
+.widget-wrapper{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
 }
 
-.contact-title h1{
-  font-size: 32px;
-  line-height: 10px;
+.widget{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  justify-content: center;
 }
-
-.contact-title h2{
-  font-size: 16px;
-}
-
-form{
-  margin-top: 50px;
-  transition: all 2.5s ease-in-out;
-}
-
-.form-control {
-  width: 600px;
-  background: transparent;
-  border: none;
-  outline: none;
-  border-bottom: 1px solid white;
-  color: white;
-  font-size: 18px;
-  margin-bottom: 16px;
-}
-
-input {
-  height: 45px;
-}
-
-form .submit {
-  background: green;
-  color: white;
-  font-size: 20px;
-  font-weight: bold;
-  letter-spacing: 2px;
-  height: 50px;
-  margin-top: 20px;
-  outline: none;
-  border: none;
-  cursor: pointer;
-}
-
-form .submit:hover{
-  background-color: darkgreen;
-} */

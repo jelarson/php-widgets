@@ -54,7 +54,7 @@
   </div>
   <div class='widget-wrapper'>
 
-    <div class="calculator-widget">
+    <div class="calculator-widget widget">
       <form action="widget-page.php" method="post" action="widget-page.php">
         First Num: <input type="number" step='0.1' name="num1"> <br>
         Operator: <select name='op'>
@@ -68,25 +68,25 @@
         </form>
         <h2>Answer: <?php echo $calc_answer ?></h2>
       </div>
-      <div class="reverse-widget">
+      <div class="reverse-widget widget">
         <form action="widget-page.php" method="post" action="widget-page.php">
           Reverse Text: <input type="text" name="reverse"> <br>
           <input type='submit' value='Submit'>
         </form>
         <h2>Result: <?php echo $reverse_answer ?></h2>
       </div>
-      <div class="background-widget" style='background: <?php echo $bg_color ?>'>
+      <div class="background-widget widget" style='background: <?php echo $bg_color ?>'>
         <form action="widget-page.php" method="post" action="widget-page.php">
           <input type="radio" id="red" name="bgColor" value="red">
           <label for="red">Red</label><br>
           <input type="radio" id="purple" name="bgColor" value="purple">
           <label for="purple">Purple</label><br>
-  <input type="radio" id="green" name="bgColor" value="green">
-  <label for="green">Green</label><br>
+          <input type="radio" id="green" name="bgColor" value="green">
+          <label for="green">Green</label><br>
     <input type='submit' value='Submit'>
   </form>
 </div>
-<div class="shuffle-widget">
+<div class="shuffle-widget widget">
   <form action="widget-page.php" method="post" action="widget-page.php">
     Shuffle Text: <input type="text" name="shuffle"> <br>
     <input type='submit' value='Submit'>
