@@ -36,6 +36,8 @@
     $reverse_text = $_POST['reverse'];
 
     $reverse_answer = (strlen($reverse_text) > 0 ? strrev($reverse_text) : '');
+
+    $bg_color = $_POST['bgColor'];
 ?>
   <div class="contact-title">
     <h1>PHP Widget Page</h1>
@@ -69,17 +71,17 @@
   </form>
   <h2>Result: <?php echo $reverse_answer ?></h2>
   </div>
-  <div class="background-widget">
+  <div class="background-widget" style='background: <?php echo $bg_color ?>'>
   <form action="widget-page.php" method="post" action="widget-page.php">
-  <input type="radio" id="male" name="gender" value="male">
-  <label for="male">Male</label><br>
-  <input type="radio" id="female" name="gender" value="female">
-  <label for="female">Female</label><br>
-  <input type="radio" id="other" name="gender" value="other">
-  <label for="other">Other</label><br>
+  <input type="radio" id="red" name="bgColor" value="red">
+  <label for="red">Red</label><br>
+  <input type="radio" id="purple" name="bgColor" value="purple">
+  <label for="purple">Purple</label><br>
+  <input type="radio" id="green" name="bgColor" value="green">
+  <label for="green">Green</label><br>
     <input type='submit' value='Submit'>
   </form>
-  <h2>Result: <?php echo $reverse_answer ?></h2>
+  <h2>Result: <?php echo $bg_color ?></h2>
   </div>
 
 
