@@ -33,6 +33,9 @@
       $calc_answer = '';
     }
   
+    $reverse_text = $_POST['reverse'];
+
+    $reverse_answer = (strlen($reverse_text) > 0 ? strrev($reverse_text) : '');
 ?>
   <div class="contact-title">
     <h1>PHP Widget Page</h1>
@@ -58,6 +61,25 @@
     <input type='submit' value='Submit'>
   </form>
   <h2>Answer: <?php echo $calc_answer ?></h2>
+  </div>
+  <div class="reverse-widget">
+  <form action="widget-page.php" method="post" action="widget-page.php">
+    Reverse Text: <input type="text" name="reverse"> <br>
+    <input type='submit' value='Submit'>
+  </form>
+  <h2>Result: <?php echo $reverse_answer ?></h2>
+  </div>
+  <div class="background-widget">
+  <form action="widget-page.php" method="post" action="widget-page.php">
+  <input type="radio" id="male" name="gender" value="male">
+  <label for="male">Male</label><br>
+  <input type="radio" id="female" name="gender" value="female">
+  <label for="female">Female</label><br>
+  <input type="radio" id="other" name="gender" value="other">
+  <label for="other">Other</label><br>
+    <input type='submit' value='Submit'>
+  </form>
+  <h2>Result: <?php echo $reverse_answer ?></h2>
   </div>
 
 
