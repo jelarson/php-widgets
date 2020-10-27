@@ -48,13 +48,14 @@
   <div class="name-widget">
     <form id="contact-form" method="post" action="widget-page.php">
       <input name="name" type="text" class="form-control" placeholder="Your Name" required>
-      <input type='submit' class='form-control submit' value="Submit">
+      <input type='submit' class='form-control button' value="Submit">
       <!-- <input type='submit' class='form-control submit' name="clear" value="clear"> -->
     </form>
   </div>
   <div class='widget-wrapper'>
 
     <div class="calculator-widget widget">
+      <h3>Calculator</h3> 
       <form action="widget-page.php" method="post" action="widget-page.php">
         First Num: <input type="number" step='0.1' name="num1"> <br>
         Operator: <select name='op'>
@@ -64,32 +65,35 @@
           <option value='/'>/</option>  
           <br>
           Second Num: <input type="number" step='0.1' name="num2"> <br>
-          <input type='submit' value='Submit'>
+          <input type='submit' value='Submit' class='button'>
         </form>
         <h2>Answer: <?php echo $calc_answer ?></h2>
       </div>
       <div class="reverse-widget widget">
+        <h3>Reverse String</h3> 
         <form action="widget-page.php" method="post" action="widget-page.php">
           Reverse Text: <input type="text" name="reverse"> <br>
-          <input type='submit' value='Submit'>
+          <input type='submit' value='Submit' class='button'>
         </form>
         <h2>Result: <?php echo $reverse_answer ?></h2>
       </div>
       <div class="background-widget widget" style='background: <?php echo $bg_color ?>'>
-        <form action="widget-page.php" method="post" action="widget-page.php">
+        <h3>Pick a Background Color</h3> 
+      <form action="widget-page.php" method="post" action="widget-page.php">
           <input type="radio" id="red" name="bgColor" value="red">
           <label for="red">Red</label><br>
           <input type="radio" id="purple" name="bgColor" value="purple">
           <label for="purple">Purple</label><br>
           <input type="radio" id="green" name="bgColor" value="green">
           <label for="green">Green</label><br>
-    <input type='submit' value='Submit'>
+    <input type='submit' value='Submit' class='button'>
   </form>
 </div>
 <div class="shuffle-widget widget">
+  <h3>Randomize String</h3> 
   <form action="widget-page.php" method="post" action="widget-page.php">
     Shuffle Text: <input type="text" name="shuffle"> <br>
-    <input type='submit' value='Submit'>
+    <input type='submit' value='Submit' class='button'>
   </form>
   <h2>Result: <?php echo $shuffle_text ?></h2>
 </div>
